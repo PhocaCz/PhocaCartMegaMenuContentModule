@@ -48,7 +48,7 @@ Phoca Cart Mega Menu Content Module - a Joomla! CMS module which displays conten
 
 [Joomla! - Phoca Cart Demo](https://www.phoca.cz/phocacartdemo/)
 
-[Joomla! - Phoca Cart - Phoca Premiere Template Demo](https://www.phoca.cz/phocacartdemo/premiere/)
+[Joomla! - Phoca Cart - Astroid Template Demo](https://www.phoca.cz/phocacartdemo/astroid/)
 
 
 
