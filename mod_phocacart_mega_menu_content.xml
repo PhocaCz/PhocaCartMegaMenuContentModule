@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade" version="3">
+	<name>mod_phocacart_mega_menu_content</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>26/07/2019</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>3.0.0</version>
+	<description>MOD_PHOCACART_MEGA_MENU_CONTENT_DESCRIPTION</description>
+	<projectName>PhocaCartMegaMenuContentModule</projectName>
+
+	<media destination="mod_phocacart_mega_menu_content" folder="media">
+		<folder>css</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<files>
+		<folder>tmpl</folder>
+		<filename module="mod_phocacart_mega_menu_content">index.html</filename>
+		<filename module="mod_phocacart_mega_menu_content">manifest.xml</filename>
+		<filename module="mod_phocacart_mega_menu_content">mod_phocacart_mega_menu_content.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocacart_mega_menu_content.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocacart_mega_menu_content.sys.ini</language>
+	</languages>
+	
+	<config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_phocacart/models/fields">
+
+                <field name="type" type="list" default="3" label="MOD_PHOCACART_MEGA_MENU_CONTENT_OUTPUT_TYPE_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_OUTPUT_TYPE_DESC">
+                    <option value="1">MOD_PHOCACART_MEGA_MENU_CONTENT_CATEGORIES</option>
+                    <option value="2">MOD_PHOCACART_MEGA_MENU_CONTENT_MANUFACTURERS_BRANDS</option>
+                </field>
+
+                <field name="columns" type="list" default="3" label="MOD_PHOCACART_MEGA_MENU_CONTENT_NUMBER_COLUMNS_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_NUMBER_COLUMNS_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </field>
+
+                <field name="items" type="text" default="3" size="10" label="MOD_PHOCACART_MEGA_MENU_CONTENT_NUMBER_ITEMS_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_NUMBER_ITEMS_DESC"/>
+
+
+                <field name="display_title" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_TITLE_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_TITLE_DESC">
+                    <option value="1">MOD_PHOCACART_MEGA_MENU_CONTENT_YES</option>
+                    <option value="0">MOD_PHOCACART_MEGA_MENU_CONTENT_NO</option>
+                </field>
+                <field name="display_link" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_LINK_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_LINK_DESC">
+                    <option value="1">MOD_PHOCACART_MEGA_MENU_CONTENT_YES</option>
+                    <option value="0">MOD_PHOCACART_MEGA_MENU_CONTENT_NO</option>
+                </field>
+                <field name="display_image" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_IMAGE_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_IMAGE_DESC">
+                    <option value="1">MOD_PHOCACART_MEGA_MENU_CONTENT_YES</option>
+                    <option value="0">MOD_PHOCACART_MEGA_MENU_CONTENT_NO</option>
+                </field>
+                <field name="display_desc" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_DESCRIPTION_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_DESCRIPTION_DESC">
+                    <option value="1">MOD_PHOCACART_MEGA_MENU_CONTENT_YES</option>
+                    <option value="0">MOD_PHOCACART_MEGA_MENU_CONTENT_NO</option>
+                </field>
+
+                <field name="ordering" type="list" default="1" label="MOD_PHOCACART_MEGA_MENU_CONTENT_ORDERING_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_ORDERING_DESC">
+                    <option value="1">MOD_PHOCACART_MEGA_MENU_CONTENT_ORDERING_ASC</option>
+                    <option value="2">MOD_PHOCACART_MEGA_MENU_CONTENT_ORDERING_DESC</option>
+                    <option value="3">MOD_PHOCACART_MEGA_MENU_CONTENT_TITLE_ASC</option>
+                    <option value="4">MOD_PHOCACART_MEGA_MENU_CONTENT_TITLE_DESC</option>
+                    <option value="5">MOD_PHOCACART_MEGA_MENU_CONTENT_DATE_ASC</option>
+                    <option value="6">MOD_PHOCACART_MEGA_MENU_CONTENT_DATE_DESC</option>
+                </field>
+
+                <field name="filter_language" type="radio" class="btn-group btn-group-yesno" default="0" label="MOD_PHOCACART_MEGA_MENU_FIELD_FILTER_LANGUAGE_LABEL" description="MOD_PHOCACART_MEGA_MENU_FIELD_FILTER_LANGUAGE_DESC">
+                <option value="1">MOD_PHOCACART_MEGA_MENU_CONTENT_YES</option>
+                <option value="0">MOD_PHOCACART_MEGA_MENU_CONTENT_NO</option>
+                </field>
+
+                <field name="moduleclass_sfx" type="textarea" rows="3" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+
+
+                <field name="phocahead1" type="phocahead" default="MOD_PHOCACART_MEGA_MENU_CONTENT_CATEGORY_OPTIONS" label="" description=""/>
+
+
+                <field name="display_categories" type="phocacartcategory" section="com_phocacart" default="0" label="MOD_PHOCACART_MEGA_MENU_CONTENT_FIELD_DISPLAY_CATEGORIES_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_FIELD_DISPLAY_CATEGORIES_DESC" multiple="true"/>
+
+                <field name="hide_categories" type="phocacartcategory" section="com_phocacart" default="0" label="MOD_PHOCACART_MEGA_MENU_CONTENT_FIELD_HIDE_CATEGORIES_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_FIELD_HIDE_CATEGORIES_DESC" multiple="true"/>
+
+<field name="display_subcategories" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_SUBCATEGORIES_LABEL" description="MOD_PHOCACART_MEGA_MENU_CONTENT_DISPLAY_SUBCATEGORIES_DESC">
+                    <option value="1">MOD_PHOCACART_MEGA_MENU_CONTENT_YES</option>
+                    <option value="0">MOD_PHOCACART_MEGA_MENU_CONTENT_NO</option>
+                </field>
+
+
+
+            </fieldset>
+        </fields>
+    </config>
+
+	<updateservers>
+		<server type="extension" name="MOD_PHOCACART_MEGA_MENU_CONTENT" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaCartMegaMenuContentModule/master/manifest.xml]]></server>
+	</updateservers>
+</extension>

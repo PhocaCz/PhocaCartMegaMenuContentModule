@@ -1,0 +1,19 @@
+{
+	"author": "Jan Pavelka (www.phoca.cz)",
+	"authorUrl": "https://www.phoca.cz",
+	"copyright": "Jan Pavelka",
+	"license": "GNU/GPL",
+	"projectName": "PhocaCartMegaMenuContentModule",
+	"extensionName": "Phoca Cart Mega Menu Content Module",
+	"projectInitials" : "PC",				  
+	"description": "Phoca Cart Mega Menu Content Module - a Joomla! CMS module which displays content of e.g. Phoca Cart categories or brands which can be displayed in mega menu.",
+	"projectUrl": "https://www.phoca.cz/phoca-cart-mega-menu-content-module",
+	"projectDocumentationUrl": "https://www.phoca.cz/documentation/",
+	"projectMainComponent": "Phoca Cart",
+	"projectMainComponentInfoUrl": "https://www.phoca.cz/project/phocacart-joomla-ecommerce",
+	"projectDemo" : {
+		"Joomla! - Phoca Cart Demo": "https://www.phoca.cz/phocacartdemo/",
+		"Joomla! - Phoca Cart - Astroid Template Demo": "https://www.phoca.cz/phocacartdemo/astroid/"
+	},
+	"projectColor": "#129ed9"
+}
