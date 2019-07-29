@@ -2,12 +2,12 @@
 <extension type="module" client="site" method="upgrade" version="3">
 	<name>mod_phocacart_mega_menu_content</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>26/07/2019</creationDate>
+	<creationDate>29/07/2019</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>3.0.0</version>
+	<version>3.3.0</version>
 	<description>MOD_PHOCACART_MEGA_MENU_CONTENT_DESCRIPTION</description>
 	<projectName>PhocaCartMegaMenuContentModule</projectName>
 
@@ -19,7 +19,6 @@
 	<files>
 		<folder>tmpl</folder>
 		<filename module="mod_phocacart_mega_menu_content">index.html</filename>
-		<filename module="mod_phocacart_mega_menu_content">manifest.xml</filename>
 		<filename module="mod_phocacart_mega_menu_content">mod_phocacart_mega_menu_content.php</filename>
 	</files>
 
