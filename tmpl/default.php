@@ -134,7 +134,7 @@ if ($p['type'] == 1 && !empty($categories)) {
                 $d['t'] = $pc;
                 $d['src'] = JURI::base(true) . '/' . $v->image;
                 $d['srcset-webp'] = '';//JURI::base(true) . '/' . $image->rel_webp;
-                $d['alt-value'] = PhocaCartImage::getAltTitle($v->title, $v->image);
+                $d['alt-value'] = PhocacartImage::getAltTitle($v->title, $v->image);
                 $d['class'] = $s['c']['img-responsive'] . ' ph-image ph-mega-menu-content-image '.$class;
 
                 echo $p['display_link'] == 1 ? '<a href="' . $link . '">' : '';

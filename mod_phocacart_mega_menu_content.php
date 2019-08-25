@@ -30,7 +30,7 @@ $media->loadSpec();
 JHtml::stylesheet('media/mod_phocacart_mega_menu_content/css/style.css');
 $s = PhocacartRenderStyle::getStyles();
 
-$pCom						= JComponentHelper::getParams( 'com_phocacart' );
+$pCom						= PhocacartUtils::getComponentParameters();
 $pc['display_webp_images']	= $pCom->get( 'display_webp_images', 0 );
 
 
