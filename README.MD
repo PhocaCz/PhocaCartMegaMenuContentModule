@@ -56,7 +56,7 @@ Phoca Cart Mega Menu Content Module - a Joomla! CMS module which displays conten
 
 ## Version
 
-3.5.3
+3.5.4
 
 
 
