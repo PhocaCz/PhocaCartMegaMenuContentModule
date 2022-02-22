@@ -7,19 +7,26 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 
+
+
+use Joomla\CMS\Component\ComponentHelper;
+use Joomla\CMS\Factory;
+use Joomla\CMS\Helper\ModuleHelper;
+use Joomla\CMS\HTML\HTMLHelper;
+
 defined('_JEXEC') or die;// no direct access
 
-if (!JComponentHelper::isEnabled('com_phocacart', true)) {
-	$app = JFactory::getApplication();
+if (!ComponentHelper::isEnabled('com_phocacart', true)) {
+	$app = Factory::getApplication();
 	$app->enqueueMessage(JText::_('Phoca Cart Error'), JText::_('Phoca Cart is not installed on your system'), 'error');
 	return;
 }
 
-$document	= JFactory::getDocument();
+$document	= Factory::getDocument();
 
 JLoader::registerPrefix('Phocacart', JPATH_ADMINISTRATOR . '/components/com_phocacart/libraries/phocacart');
 
-$lang = JFactory::getLanguage();
+$lang = Factory::getLanguage();
 //$lang->load('com_phocacart.sys');
 $lang->load('com_phocacart');
 
@@ -27,7 +34,7 @@ $media = new PhocacartRenderMedia();
 $media->loadBase();
 $media->loadBootstrap();
 $media->loadSpec();
-JHtml::stylesheet('media/mod_phocacart_mega_menu_content/css/style.css');
+HTMLHelper::stylesheet('media/mod_phocacart_mega_menu_content/css/style.css');
 $s = PhocacartRenderStyle::getStyles();
 
 $pCom						= PhocacartUtils::getComponentParameters();
@@ -52,7 +59,7 @@ $manufacturers	= array();
 $filter_language	= $params->get( 'filter_language', 0 );
 	$language = '';
 	if ($filter_language == 1) {
-		//$lang 		= JFactory::getLanguage();
+		//$lang 		= Factory::getLanguage();
 		$language	= $lang->getTag();
 	}
 
@@ -74,5 +81,5 @@ if ($p['type'] == 1) {
 	$manufacturers = PhocacartManufacturer::getAllManufacturers($p['ordering'], 0, $language);
 }
 
-require(JModuleHelper::getLayoutPath('mod_phocacart_mega_menu_content'));
+require(ModuleHelper::getLayoutPath('mod_phocacart_mega_menu_content'));
 ?>

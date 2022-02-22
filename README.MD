@@ -2,7 +2,7 @@
 
 
 
-![Phoca Cart Mega Menu Content Module](https://github.com/PhocaCz/PhocaCartMegaMenuContentModule/blob/master/mod_phocacart_mega_menu_content.png)
+![Phoca Cart Mega Menu Content Module](https://github.com/PhocaCz/PhocaCartMegaMenuContentModule/blob/master/mod_phocacart_mega_menu_content.png?raw=true)
 
 # Phoca Cart Mega Menu Content Module
 
@@ -54,9 +54,13 @@ Phoca Cart Mega Menu Content Module - a Joomla! CMS module which displays conten
 
 
 
-## Version
+## Version (Joomla! 3.x)
 
 3.5.4
+
+## Version (Joomla! 4.x)
+
+4.0.0
 
 
 

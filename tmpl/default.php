@@ -6,9 +6,12 @@
  * @copyright Copyright (C) Jan Pavelka www.phoca.cz
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
+
+use Joomla\CMS\Layout\FileLayout;
+
 defined('_JEXEC') or die;
 
-$layoutI	= new JLayoutFile('image', null, array('component' => 'com_phocacart'));
+$layoutI	= new FileLayout('image', null, array('component' => 'com_phocacart'));
 $col 		= PhocacartRenderFront::getColumnClass((int)$p['columns']);
 
 echo '<div class="ph-mega-menu-content-module-box'.$moduleclass_sfx .'">';
@@ -156,12 +159,6 @@ if ($p['type'] == 1 && !empty($categories)) {
 
     }
 }
-
-
-
-
-
-
 
 echo '</div>';
 ?>
